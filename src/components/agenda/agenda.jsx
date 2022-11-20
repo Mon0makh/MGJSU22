@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 import scroll1 from "../../images/japan/scroll1.png";
 import scroll2 from "../../images/japan/scroll2.png";
 import scroll3 from "../../images/japan/scroll3.png";
-
+import benzaiten from "../../images/japan/benzaiten.png";
 
 const AgendaText = ({imgIndex}) =>{
   
@@ -18,32 +18,40 @@ const AgendaText = ({imgIndex}) =>{
          
             dates: [
                     {
-                        dateTitle: "10:30-11:00:",
-                        text: "Сбор участников «Mythical Game Jam SU 2022»", 
+                        dateTitle: '10:00 - 11:30:',
+                        text: "Церемония открытия. Концерт", 
                     },
                     {
-                        dateTitle: '11:00-12:10:',
-                        text: "Церемония открытия. Презентация «Mythical Game Jam SU 2022»", 
+                        dateTitle: "11:50 - 12:40:",
+                        text:  "Meetup - Indie Game Developer Story",
                     },
                     {
-                        dateTitle: "12:10-12:20:",
-                        text:  "Знакомство с составом жюри. Приветственное слово жюри.",
+                        dateTitle: "13:00 - 14:00",
+                        text:  "Обеденный перерыв",
                     },
                     {
-                        dateTitle: "12:20-12:30:",
-                        text:  "Обратный отчет.Открытие фестиваля",
+                        dateTitle: "14:00 - 14:40",
+                        text:  "Workshop 1",
                     },
                     {
-                        dateTitle: "12:30-13:30:",
-                        text:  "Обед",
+                        dateTitle: "14:50 - 15:40",
+                        text:  "Meetup 2",
                     },
                     {
-                        dateTitle: "14:00-17:00:",
-                        text:  "Мастер-классы от спикеров фестиваля",
+                        dateTitle: "16:00 - 16:40",
+                        text: "Meetup 3"
                     },
                     {
-                        dateTitle: "17:00:",
-                        text: "Завершение первого дня фестиваля"
+                        dateTitle: "16:50 - 17:30",
+                        text: "Meetup 4"
+                    },
+                    {
+                        dateTitle: "17:30 - 18:00",
+                        text: "Секция Вопрос-Ответ"
+                    },
+                    {
+                        dateTitle: "18:00-18:30",
+                        text: "Закрытие 1го дня и Призы"
                     }
                 ]
         },
@@ -54,24 +62,20 @@ const AgendaText = ({imgIndex}) =>{
                     </h3>),
             dates: [
                 {
-                    dateTitle: "09.00-09:30:",
+                    dateTitle: "07.12: 09:00 - 09:30:",
                     text:  "Сбор всех участников фестиваля",
                 },
                 {
-                    dateTitle: '10:00:',
+                    dateTitle: '07.12: 10:00',
                     text:  "Старт Game Jam SU 22",
                 },
                 {
-                    dateTitle: "08.12.22|весь день:",
+                    dateTitle: "08.12: Full Day",
                     text:  "Работа команд и менторов.",
                 },
                 {
-                    dateTitle: "09.12.22|9:00-11:00:",
-                    text:   "Прием проектов «SU Game Jam» до 11 час 00 мин 09.12.2022г.",
-                },
-                {
-                    dateTitle: "11:00–18:00:",
-                    text:  "Подготовка команд к защите проектов. Свободное время",
+                    dateTitle: "09.12: 12:00",
+                    text:   "Сдача и защита проектов",
                 }
              
             ]
@@ -79,20 +83,24 @@ const AgendaText = ({imgIndex}) =>{
         {
              
             title: (<h3 className="info-title">
-                        Субботник 10 декабря <br/> (Закрытие фестиваля)
+                        Суббота 10 декабря <br/> (Закрытие фестиваля)
                     </h3>),
               dates: [
                 {
-                    dateTitle: "10:00-13.00:",
+                    dateTitle: "10:00 - 11:30",
                     text:  "Презентация работ участниками фестиваля.", 
                 },
                 {
-                    dateTitle: '13.00–15:00:',
-                    text:  "Работа жюри",
+                    dateTitle: "11:30 – 12:30",
+                    text:   "Церемония награждения победителей «Mythical Game Jam SU 2022»",
                 },
                 {
-                    dateTitle: "16:00–17:00:",
-                    text:   "Церемония награждения победителей «Mythical Game Jam SU 2022»",
+                    dateTitle: "12:30 - 13:00",
+                    text:   "Закрытие",
+                },
+                {
+                    dateTitle: "13:00",
+                    text:   "Итоговый Кофе-брейк",
                 }
             
             ]
@@ -105,7 +113,7 @@ const AgendaText = ({imgIndex}) =>{
             {dates[imgIndex]?dates[imgIndex]["title"]:null}
             <div>
                 {dates[imgIndex]?dates[imgIndex]["dates"].map((date, index)=>
-                    <div className='agenda-dates' key={index}>
+                    <div className='info-line' key={index}>
                         <p className="info-subtitle" >{date.dateTitle}</p>
                         <p>{date.text}</p>
                     </div>
@@ -157,11 +165,13 @@ const Agenda = ({handleShowText, show, imgIndex}) =>{
                     </div>
                 </div>
             </Container>
+       
             <Overlay 
                 handleShowText={handleShowText} 
                 show={show} 
                 content={<AgendaText imgIndex={imgIndex} />}
-                />
+            />
+            <img src={benzaiten} className="benzaiten gif-img" alt="benzaiten"/>
             
         </section>
     )

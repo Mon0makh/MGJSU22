@@ -1,0 +1,110 @@
+.rule-text{
+    margin-bottom: 8vh;
+}
+
+.loki-thor{   
+    right: -25vw;
+    transition: .2s ease-in-out;
+}
+
+.fade-enter {
+    opacity: 0;
+    transform: rotateY(0deg);
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+.fade-enter-active,
+.fade-exit-active {
+    transition: opacity 300ms, transform 300ms;
+}
+  
+
+
+.card-rule{
+    perspective: 1000px; 
+}
+.card-title-rule{
+    font-size: 22px;
+}
+.card-rule-wrapper{
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card-rule-front,
+.card-rule-back{
+    position: absolute;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+.card-rule-front{
+    background-color: #709874c1;
+}
+.card-rule-back{
+    background-color: #c9c57cc1;
+    transform: rotateY(180deg);
+}
+
+.card-rule-btn-front{
+    background-color: #495E44;
+}
+.card-rule-btn-front:hover{
+    background-color: #3d4f39;
+}
+.card-rule-btn-back{
+    background-color: #79763d;
+}
+.card-rule-btn-back:hover{
+    background-color: #6d6a36;
+}
+
+.flip-btn{
+    background: transparent;
+    margin-bottom: 8px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-transform: uppercase;
+    text-align: end;
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: .2s;
+}
+.flip-btn:hover{
+    color: rgb(246, 246, 246);
+}
+
+@media (min-width: 768px) {
+    .loki-thor{
+        right: 4vw;
+    }
+    .card-rule-wrapper{
+        width: 500px;
+        margin: 0 auto;
+    }
+    .card-title-rule{
+        font-size: 26px;
+    }
+    .flip-btn{
+        font-size: 12px;
+    }
+}
+@media (min-width: 992px) {
+
+    .card-rule-front{
+        background-color: #709874;
+    }
+    .card-rule-back{
+        background-color: #c9c57c;
+    }
+    .card-rule-wrapper{
+        margin: 0;
+    }
+    
+   
+    
+}
