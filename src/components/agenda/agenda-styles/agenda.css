@@ -2,11 +2,11 @@
     background:#572525;
 }
 
-.agenda-text{
-    line-height: 18px;
-    letter-spacing: 1px;
+.agenda-title{
+    font-size: 3vw;
+    margin-bottom: 2vw;
+    white-space: pre;
 }
-
 .scrolls{
     display: flex;
     flex-direction: column;

@@ -29,6 +29,7 @@ p,a,
 fieldset,
 input,
 textarea,
+select,
 button{
   margin:0; 
   padding:0; 
@@ -43,6 +44,7 @@ ul, ol, dd {
 }
 fieldset, 
 input,
+select,
 button { 
   border-width:0; 
   outline: none;
@@ -50,11 +52,28 @@ button {
 a { 
   text-decoration:none;   
 }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
 
+}
 
+.swiper-pagination-vertical.swiper-pagination-bullets 
+.swiper-pagination-bullet, 
+.swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+  height: 40px;
+  width: 4px;
+  border-radius: 6px;
+  /* background-color: rgb(225, 225, 225); */
+}
+.swiper-pagination-bullet-active{
+  background-color: rgb(220, 220, 220) !important;
+}
 
 .page{
-  padding: 50px 0;
+  padding: 55px 0 50px ;
   height: 100vh;
   display: flex;
 }
@@ -76,10 +95,6 @@ a {
 
 .wrapper{
   z-index: 5;
-}
-
-.navigation{
-  position: fixed;
 }
 
 .card{
@@ -115,25 +130,21 @@ a {
   font-size: 15px;
   line-height: 22px;
   font-weight: 300;
+  white-space: pre;
 }
 .info-line{
   border-bottom: 1px solid #fff;
-  margin-bottom: 1.5vh;
+  margin-bottom: 2vh;
 }
 .info-text{
-  font-size: 2.2vw;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  line-height: 14px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-align: justify;
   font-weight: 300;
 }
+
 .info-title{
-  font-size: 2.5vw;
-  margin-bottom: 3vw;
-}
-.info-subtitle{
   font-weight: bold;
-  margin-bottom: 5px;
 }
 .info-lists{
   list-style-type: disc;
@@ -141,23 +152,28 @@ a {
   padding-left: 4px;
 }
 .info-lists li{
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 .gif-img{
   height: 90vh;
   position: absolute;
   bottom: 0;
 }
+
 @media (min-width: 576px) {
   .info-text{
-    line-height: 25px;
+    font-size: 16px;
   }
-
 }
 @media (min-width: 768px) {
   .card{
     width: 500px;
     margin: 0 auto;
+  }
+
+  .info-text{
+    font-size: 18px;
+    letter-spacing: 2px;
   }
   .general-title{
     font-size: 54px;
@@ -173,8 +189,7 @@ a {
 }
 @media (min-width: 992px) {
   .info-text{
-    font-size: 16px;
-    line-height: 28px;
+    line-height: 35px;
   }
   .card{ 
     padding: 32px 45px;
