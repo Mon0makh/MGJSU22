@@ -11,6 +11,12 @@
 .main_subtitle{
     font-size: 12px;
 }
+
+.link{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
 .main_title{
     font-size: 15vw;
     font-weight: bold;

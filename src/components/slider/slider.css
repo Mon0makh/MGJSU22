@@ -1,9 +1,17 @@
 
 .slider-imgs,
 .slide-img{
-    width: 100%;   
+    width: 260px;   
 }
 
+@media (min-width: 576px) {
+    .slider-imgs,
+    .slide-img{
+        width: 100%;
+        
+    }
+    
+}
 
 @media (min-width: 992px) {
     .slider-imgs,

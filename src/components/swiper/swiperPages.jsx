@@ -13,6 +13,7 @@ import Contacts from "../contacts/contacts";
 import Navigation from "../navigation/navigation";
 import Slider from "../slider/slider";
 import Overlay from "../overlay/overlay";
+import Projects from "../projects/projects";
 
 
 const SwiperPages = ({swiperRef}) =>{
@@ -63,6 +64,9 @@ const SwiperPages = ({swiperRef}) =>{
                     </SwiperSlide>
                     <SwiperSlide className="slide-page">
                         <Registration/>
+                    </SwiperSlide>
+                    <SwiperSlide className="slide-page">
+                        <Projects/>
                     </SwiperSlide>
                     <SwiperSlide className="slide-page">
                         <Contacts/>

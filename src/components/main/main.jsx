@@ -35,10 +35,11 @@ const Main = ({swiperRef}) =>{
         <section className="main page">
             <Container className="wrapper main-wrapper">
                 <div className="main_content">
-                    <p className="main_subtitle">{
-                        chosenLang['main'].mainDate
-                    }</p>
+                    <p className="main_subtitle">the Hub. {
+                        chosenLang['main'].mainDate 
+                    } </p>
                     <h1 className="main_title">GameJam <br/> 2022</h1>
+                    <p className="main_subtitle link"><a href="https://thehub.su/retro-gj/ru/">Retro Game Jam 21↗</a></p>
                     <button 
                         className="main_reg-btn general-btns" 
                         onClick={toSlide}>{

@@ -18,6 +18,7 @@ import pic13 from "../../images/slider/pic13.jpg";
 import pic14 from "../../images/slider/pic14.jpg";
 import pic15 from "../../images/slider/pic15.jpg";
 
+
 const pics = [pic2,pic3,pic6,pic8,pic9,pic11,pic12,pic13,pic14,pic15]
 const Slider = () =>{
 

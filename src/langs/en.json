@@ -14,6 +14,7 @@
     "rulesFaq":{
         "title": "Rules & FAQ",
         "subtitle": "Rules & FAQ GameJam 2022",
+        "doc": "Download the regulations on the festival",
         "rules": "Before registering, read the rules of participation",
         "showRules": "Show rules",
         "showFaq": "Show faq",
@@ -26,6 +27,13 @@
         "registration": "Start your journey to gamedev with us at Game Jam",
         "start": "Start"
     },
+    "projects":{
+        "title": "Projects",
+        "subtitle": "Participant projects with MGJ 22",
+        "team": "Team",
+        "project": "Project"
+    },
+
     "contacts":{
         "title": "Contacts MGJSU22",
         "subtitle": "Support contacts and getting\nadditional information GameJam 2022",

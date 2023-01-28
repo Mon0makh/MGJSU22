@@ -1,0 +1,33 @@
+.projects{
+    background:#e8d089;
+}
+
+.projects-title{
+    font-size: 3vw;
+    margin-bottom: 2vw;
+    white-space: pre;
+}
+
+.project-tables{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+}
+
+table{
+    margin-left: 5em;
+}
+
+.table-head{
+    width: 10em;
+}
+
+
+@media (min-width: 992px) {
+    
+    .cat{
+        right: 0;
+    } 
+    
+}
