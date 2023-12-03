@@ -39,7 +39,7 @@ const Main = ({swiperRef}) =>{
                         chosenLang['main'].mainDate 
                     } </p>
                     <h1 className="main_title">GameJam <br/> 2022</h1>
-                    <p className="main_subtitle link"><a href="https://thehub.su/retro-gj/ru/">Retro Game Jam 21↗</a></p>
+                    <p className="main_subtitle link"><a href="https://Mon0makh.github.io/retro-gj/ru/">Retro Game Jam 21↗</a></p>
                     <button 
                         className="main_reg-btn general-btns" 
                         onClick={toSlide}>{
